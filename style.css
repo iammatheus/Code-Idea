@@ -41,7 +41,7 @@ h2{
   font-variant: small-caps;
   text-align: center;
   color: white;
-  background: #27b4fc;
+  background: red;
   border-radius: 10px;
   cursor: pointer;
   transition: .3s;
