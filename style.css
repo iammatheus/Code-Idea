@@ -1,0 +1,340 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial Rounded MT Bold',sans-serif;
+}
+body,html{
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/*Classes*/
+.center{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.w33{width: 33.3%; float: left;}
+.w50{width: 50%;}
+.w100{width: 100%;}
+.txt-center{text-align: center;}
+.clear{clear: both;}
+.left{float: left;}
+.right{float: right;}
+section{padding-top: 60px;}
+h2{
+  font-size: 30px;
+  font-variant: small-caps;
+  color: #1a2f40;
+  text-decoration: underline;
+  padding-bottom: 20px;
+}
+.btn{
+  width: 250px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 25px;
+  font-variant: small-caps;
+  text-align: center;
+  color: white;
+  background: #27b4fc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s;
+}
+.btn:hover{
+  background: #1a2f40;
+  color: #27b4fc;
+}
+/***/
+
+/*=========================
+  ESTILIZAÇÃO DO SITE
+=========================*/
+
+/*Header*/
+
+header.cabecalho{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/bg-header3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header.cabecalho .center > .logo{
+  top: 25%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+/*.logo img{
+  width: 20%;
+  height: 20%;
+}*/
+.welcome{
+  position: absolute;
+  left: 50%;
+  bottom: 95px;
+  transform: translateX(-50%);
+  color: white;
+  font-variant: small-caps;
+}
+span{
+  font-size: 60px;
+}
+header.cabecalho h1{display: none;}
+header.cabecalho p{
+  font-size: 20px;
+  padding: 10px 0 15px 0;
+}
+header.cabecalho > .center > .btn{
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+
+/*=========================
+  MENU
+=========================*/
+.menu{
+  width: 80px;
+  height: 80px;
+  background: #27b4fc;
+  border-radius: 0 0 0px 80px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  box-shadow: 0 0 0 0px #27b4fc, 0 0 0 0px #27b4fc;
+  transition: 1.1s cubic-bezier(.19, 1, .22, 1);
+}
+.menu:hover{
+  box-shadow: 0 0 0 8px #27b4fc, 0 0 0 8px #27b4fc;
+}
+.burger{
+  display: block;
+  background: #fff;
+  width: 30px;
+  height: 3px;
+  position: relative;
+  top: 29px;
+  left: 30px;
+  transition: .5s ease-in-out;
+}
+.burger:before,
+.burger:after{
+  content: "";
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: .5s ease-in-out;
+}
+.burger:before{
+  top: -10px;
+}
+.burger:after{
+  bottom: -10px;
+}
+input.check-menu{
+  display:none;
+}
+input.check-menu:checked ~ label .menu{
+  box-shadow: 0 0 0 200px #f9f9f9, 0 0 0 200px #f9f9f9;
+}
+input.check-menu:checked ~ label .burger{
+  transform: rotate(45deg);
+}
+input.check-menu:checked ~ label .burger:before{
+  transform: rotate(90deg);
+  top: 0;
+}
+input.check-menu:checked ~ label .burger:after{
+  transform: rotate(90deg);
+  bottom: 0;
+}
+.menu-header ul{
+  position: fixed;
+  top: 25px;
+  right: 45px;
+  list-style: none;
+  display:none;
+  /*transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);*/
+  z-index: 1;
+}
+input.check-menu:checked ~ul{
+  display: block;
+}
+.menu-header ul li a{
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #1a2f40;
+  font-size: 25px;
+  cursor: pointer;
+  transition: .1s;
+}
+.menu-header a:hover{
+  color: #27b4fc;
+}
+/***/
+
+/*=========================
+  SLIDE
+=========================*/
+.slide-single{
+  background: #1a2f40;
+  padding-top: calc(33.3% / 1);
+  border: 5px solid #fff;
+}
+/***/
+
+/*=========================
+  INFORMAÇÃO
+=========================*/
+section.info p{
+  color: #1c2e46;
+  font-size: 18px;
+  padding: 0 5% 0 0;
+  text-align: left;
+}
+section.info > .center > .w50 > .btn{
+  font-size: 18px;
+  width: 230px;
+  height: 40px;
+  line-height: 40px;
+}
+.container-logo{
+  margin-top: 0px;
+}
+/***/
+
+/*=========================
+  ENVIAR CÓDIGO
+=========================*/
+.input-group input{
+  width: 98%;
+  height: 40px;
+  padding: 0 2%;
+  border: 1px solid #27b4fc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: 0;
+}
+.area-group{
+  padding: 0 .35%;
+}
+.area-group textarea{
+  margin-top: 20px;
+  padding: 1% 1%;
+  border: 1px solid #27b4fc;
+  border-radius: 10px;
+  resize: vertical;
+  font-size: 15px;
+  outline: 0;
+}
+input.btn{
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 20px;
+  font-size: 22px;
+  border: 0;
+}
+/***/
+
+/*=========================
+  FOOTER
+=========================*/
+footer{
+  height: 150px;
+  padding: 15px 0;
+  background-color: #1a2f40;
+}
+.social-media i{
+  color: #27b4fc;
+  font-size: 30px;
+  padding: 5px 0px;
+}
+.social-media i > a{
+  font-size: 15px;
+  padding: 0 10px;
+  font-weight: 300;
+}
+
+.copy p{
+  font-size: 15px;
+  color: white;
+  padding: 8px 0;
+}
+.copy img{
+  width: 20%;
+  height: 20%;
+}
+
+.menu-footer{
+  margin: 5px 0;
+}
+.menu-footer ul li {
+  color: #27b4fc;
+  list-style: none;
+}
+ .menu-footer ul li::before {
+  color: #27b4fc;
+  content: "\2022";
+  font-size: 1.5em;
+  padding-right: .5em;
+}
+.menu-footer a{
+  font-size: 15px;
+}
+.menu-footer a:hover{
+  color: #27b4fc;
+}
+/***/
+
+/*=========================
+  @MEDIA
+=========================*/
+
+@media screen and (max-width: 768px){
+  .w50{width: 100%;}
+  .container-logo{display: none;}
+  footer{height: 190px; text-align: center;}
+  footer .copy img{display: none}
+  footer .copy p{font-size: 13px; padding-top: 22px;}
+  footer .center > .w33{width: 100%;}
+  footer .menu-footer > .right{display:none;}
+  footer .social-media i:nth-child(2),
+  .social-media i:nth-child(3){
+    padding-right: 55px;
+  }
+}
+@media screen and (max-width: 580px){
+  .sendcode form > .w33{width: 100%;}
+  .input-group{padding: 2%  0;}
+  .area-group{margin-top: 0;}
+  .area-group textarea{padding: 2% 2%}
+  .logo img{width: 80%; height: 80%;}
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  color: #27b4fc !important;
+  -webkit-text-fill-color: #27b4fc;
+  -webkit-box-shadow: 0 0 0px 30px #fff inset;
+  }
