@@ -322,7 +322,7 @@ footer{
   .input-group{padding: 2%  0;}
   .area-group{margin-top: 0;}
   .area-group textarea{padding: 2% 2%}
-  .logo img{width: 80%; height: 80%;}
+  .logo img{width: 50%; height: 50%;}
 }
 
 input:-webkit-autofill,
