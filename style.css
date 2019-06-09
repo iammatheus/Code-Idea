@@ -41,7 +41,7 @@ h2{
   font-variant: small-caps;
   text-align: center;
   color: white;
-  background: red;
+  background: #27b4fc;
   border-radius: 10px;
   cursor: pointer;
   transition: .3s;
@@ -322,7 +322,7 @@ footer{
   .input-group{padding: 2%  0;}
   .area-group{margin-top: 0;}
   .area-group textarea{padding: 2% 2%}
-  .logo img{width: 10%; height: 10%;}
+  .logo img{width: 65%; height: 65%;}
 }
 
 input:-webkit-autofill,
