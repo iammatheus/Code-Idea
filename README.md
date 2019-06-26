@@ -7,6 +7,6 @@ Conforme o tempo passa, irei aprender mais coisas atráves dos meus cursos e ire
 <br>
 <p>
   <b>Acessar Website:</b> 
-  <a href="www.codeidea.ml">Code Idea</a>
+  <a href="www.codeidea.ml" target="_blank">Code Idea</a>
 </p>
 
